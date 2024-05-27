@@ -26,6 +26,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+	<!-- Typed.js Library -->
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
 
   
 </head>
@@ -41,22 +43,30 @@
 
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Semen Ivanov</a></h1>
+        <h1 class="text-light"><a href="index.html" id="profile-name">Semen Ivanov</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.instagram.com/simone_ivanescu/" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="https://github.com/SamIvanov7" class="github"><i class="bx bxl-github"></i></a>
           <a href="https://t.me/sam_ivanoff" class="telegram"><i class="bx bxl-telegram"></i></a>
           <a href="https://www.linkedin.com/in/sam-i-ba0879232" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
+        <div class="flags mt-3 text-center" style="padding: 10px; margin: 0;">
+          <button onclick="switchLanguage('en')" id="lang-en" style="padding: 0; margin: 0; border: none; width: 30px; height: 18px; background: url('assets/img/us.jpg') no-repeat center center; background-size: cover;">
+            <span class="sr-only"></span>
+          </button>
+          <button onclick="switchLanguage('de')" id="lang-de" style="margin-left: 5px; padding: 0; border: none; width: 30px; height: 18px; background: url('assets/img/germany.jpg') no-repeat center center; background-size: cover;">
+            <span class="sr-only"></span>
+          </button>
+        </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span id="nav-home">Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span id="nav-about">About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span id="nav-resume">Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span id="nav-projects">Projects</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span id="nav-contact">Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -65,76 +75,76 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Semen Ivanov</h1>
-      <p>I'm <span class="typed" data-typed-items="Software Developer, Data Analyst, Machine Learning Engineer"></span></p>
+      <h1 id="hero-name">Semen Ivanov</h1>
+      <p><span class="typed" data-typed-items="Software Developer, Data Analyst, Machine Learning Engineer"></span></p>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
-  <div class="container">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
 
-    <div class="section-title">
-      <h2>About</h2>
-      <p><em>I am Sam Ivanov, a dedicated and skilled Backend & Web Developer based in Germany, specializing in Python and a range of web development technologies. With extensive experience in developing scalable and efficient applications, I excel at driving projects from conception to reality. My expertise includes full-stack development, systems engineering, and network administration, ensuring optimal functionality and a seamless user experience. I have a strong background in solar energy, having developed software solutions tailored to this field, such as tools for creating sales proposals and managing solar installations. I don't just love my job, I'm obsessed with it. Known for my problem-solving abilities and attention to detail, I consistently deliver high-quality solutions that meet and exceed client expectations.</em></p>
-    </div>
+        <div class="section-title">
+          <h2 id="about-title">About</h2>
+          <p id="about-description"><em>I am Sam Ivanov, a dedicated and skilled Backend & Web Developer based in Germany, specializing in Python and a range of web development technologies. With extensive experience in developing scalable and efficient applications, I excel at driving projects from conception to reality. My expertise includes full-stack development, systems engineering, and network administration, ensuring optimal functionality and a seamless user experience. I have a strong background in solar energy, having developed software solutions tailored to this field, such as tools for creating sales proposals and managing solar installations. I don't just love my job, I'm obsessed with it. Known for my problem-solving abilities and attention to detail, I consistently deliver high-quality solutions that meet and exceed client expectations.</em></p>
+        </div>
 
-    <div class="row">
-      <div class="col-lg-4" data-aos="fade-right">
-        <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Profile Image">
-      </div>
-      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-        <h3>Backend &amp; Web Developer</h3>
-        <p class="fst-italic">
-          Leveraging a deep understanding of technology to solve complex problems, I am committed to enhancing the digital landscape with innovative solutions.
-        </p>
         <div class="row">
-          <div class="col-lg-6">
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>15 July 1987</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>sam-ivanov.codes</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><button id="showPhoneAboutButton" type="button" class="custom-button" onclick="showABOUTPhone()">Show phone</button><span id="phone-about" style="display:none;">+49 176 70511386</span></span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>08107 Kirchberg, Deutschland</span></li>
-            </ul>
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Profile Image">
           </div>
-          <div class="col-lg-6">
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>36</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Specialist in Engineering Technology</span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><button id="showEmailAboutButton" type="button" class="custom-button" onclick="showABOUTEmail()">Show email</button><span id="email-about" style="display:none;">sam1206morfey@gmail.com</span></span></li>
-              <li><i class="bi bi-chevron-right"></i> <strong>16Personalities:</strong> <span><a href="https://www.16personalities.com/profiles/69db75928cb6d">My 16Personalities.com</a></span></li>
-            </ul>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3 id="about-heading">Backend &amp; Web Developer</h3>
+            <p class="fst-italic" id="about-intro">
+              Leveraging a deep understanding of technology to solve complex problems, I am committed to enhancing the digital landscape with innovative solutions.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="birthday-label">Birthday:</strong> <span>15 July 1987</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="website-label">Website:</strong> <span>sam-ivanov.codes</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="phone-label">Phone:</strong> <span><button id="showPhoneAboutButton" type="button" class="custom-button" onclick="showABOUTPhone()">Show phone</button><span id="phone-about" style="display:none;">+49 176 70511386</span></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="city-label">City:</strong> <span>08107 Kirchberg, Deutschland</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="age-label">Age:</strong> <span>36</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="degree-label">Degree:</strong> <span>Specialist in Engineering Technology</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="email-label">Email:</strong> <span><button id="showEmailAboutButton" type="button" class="custom-button" onclick="showABOUTEmail()">Show email</button><span id="email-about" style="display:none;">sam1206morfey@gmail.com</span></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="16personalities-label">16Personalities:</strong> <span><a href="https://www.16personalities.com/profiles/69db75928cb6d">Commander (ENTJ-A)</a></span></li>
+                </ul>
+              </div>
+            </div>
+            <script>
+              function showABOUTPhone() {
+                  document.getElementById('phone-about').style.display = 'inline';
+                  document.getElementById('showPhoneAboutButton').style.display = 'none';
+              }
+            
+              function showABOUTEmail() {
+                  document.getElementById('email-about').style.display = 'inline';
+                  document.getElementById('showEmailAboutButton').style.display = 'none';
+              }
+            </script> 
+            <p id="about-detail">
+              My career spans various roles where I have fostered innovation and efficiency. My projects often lead to significant time and cost savings for clients, emphasizing the practical benefits of digital tools and software solutions. My approach to development is rooted in meticulous research, continual learning, and proactive problem-solving.
+            </p>
           </div>
         </div>
-        <script>
-          function showABOUTPhone() {
-              document.getElementById('phone-about').style.display = 'inline';
-              document.getElementById('showPhoneAboutButton').style.display = 'none';
-          }
-        
-          function showABOUTEmail() {
-              document.getElementById('email-about').style.display = 'inline';
-              document.getElementById('showEmailAboutButton').style.display = 'none';
-          }
-        </script> 
-        <p>
-          My career spans various roles where I have fostered innovation and efficiency. My projects often lead to significant time and cost savings for clients, emphasizing the practical benefits of digital tools and software solutions. My approach to development is rooted in meticulous research, continual learning, and proactive problem-solving.
-        </p>
-      </div>
-    </div>
 
-  </div>
-</section><!-- End About Section -->
+      </div>
+    </section><!-- End About Section -->
 
 <!-- ======= Skills Section ======= -->
 <section id="skills" class="skills section-bg">
   <div class="container">
 
     <div class="section-title">
-      <h2>Skills</h2>
-      <p>As a seasoned backend and web developer, my skill set spans various frameworks, tools, and technologies, allowing me to build robust, scalable solutions that drive business growth and operational efficiency.</p>
+      <h2 id="skills-title">Skills</h2>
+      <p id="skills-description">As a seasoned backend and web developer, my skill set spans various frameworks, tools, and technologies, allowing me to build robust, scalable solutions that drive business growth and operational efficiency.</p>
     </div>
 
     <div class="row skills-content">
@@ -142,49 +152,49 @@
       <div class="col-lg-6" data-aos="fade-up">
 
         <div class="progress">
-          <span class="skill">Python Frameworks (Django, Flask, FastAPI) <i class="val">95%</i></span>
+          <span class="skill" id="skill-python">Python Frameworks (Django, Flask, FastAPI) <i class="val">95%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Database Management (PostgreSQL, MySQL, MongoDB) <i class="val">90%</i></span>
+          <span class="skill" id="skill-database">Database Management (PostgreSQL, MySQL, MongoDB) <i class="val">90%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Cloud Platforms (Azure, AWS, DigitalOcean) <i class="val">85%</i></span>
+          <span class="skill" id="skill-cloud">Cloud Platforms (Azure, AWS, DigitalOcean) <i class="val">85%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Web Development (HTML, CSS, JavaScript, Bootstrap) <i class="val">90%</i></span>
+          <span class="skill" id="skill-web">Web Development (HTML, CSS, JavaScript, Bootstrap) <i class="val">90%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">C# Development <i class="val">85%</i></span>
+          <span class="skill" id="skill-csharp">C# Development <i class="val">85%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Machine Learning (scikit-learn, TensorFlow, Keras) <i class="val">80%</i></span>
+          <span class="skill" id="skill-ml">Machine Learning (scikit-learn, TensorFlow, Keras) <i class="val">80%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Security (Cryptography, Bcrypt, OAuth) <i class="val">85%</i></span>
+          <span class="skill" id="skill-security">Security (Cryptography, Bcrypt, OAuth) <i class="val">85%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -195,49 +205,49 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
         <div class="progress">
-          <span class="skill">API Development (REST, SOAP, GraphQL) <i class="val">90%</i></span>
+          <span class="skill" id="skill-api">API Development (REST, SOAP, GraphQL) <i class="val">90%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Version Control & CI/CD (GIT, GitHub, GitLab, GitHub Actions, Jenkins) <i class="val">95%</i></span>
+          <span class="skill" id="skill-version-control">Version Control & CI/CD (GIT, GitHub, GitLab, GitHub Actions, Jenkins) <i class="val">95%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Development Tools (Unix, Docker, VIM/TMUX, PyCharm, VSCode, Black, Gunicorn) <i class="val">88%</i></span>
+          <span class="skill" id="skill-tools">Development Tools (Unix, Docker, VIM/TMUX, PyCharm, VSCode, Black, Gunicorn) <i class="val">88%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Firewall & Network Security <i class="val">90%</i></span>
+          <span class="skill" id="skill-firewall">Firewall & Network Security <i class="val">90%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Virtualization (VMWare, Hyper-V) <i class="val">85%</i></span>
+          <span class="skill" id="skill-virtualization">Virtualization (VMWare, Hyper-V) <i class="val">85%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Operating Systems (Linux, Mac OS, Windows) <i class="val">90%</i></span>
+          <span class="skill" id="skill-os">Operating Systems (Linux, Mac OS, Windows) <i class="val">90%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <div class="progress">
-          <span class="skill">Data Analysis & Visualization <i class="val">80%</i></span>
+          <span class="skill" id="skill-data-analysis">Data Analysis & Visualization <i class="val">80%</i></span>
           <div class="progress-bar-wrap">
             <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -250,26 +260,21 @@
   </div>
 </section><!-- End Skills Section -->
 
-    
-    
-
-
-    <!-- ======= Resume Section ======= -->
 <!-- ======= Resume Section ======= -->
 <section id="resume" class="resume">
   <div class="container">
 
     <div class="section-title">
-      <h2>Resume</h2>
-      <p>Experienced Python Software Developer from Ukraine with a strong background in software development, project management, and IT support. Skilled in a range of modern technologies, with a proven track record in developing efficient tools, systems, and comprehensive IT solutions for businesses.</p>
+      <h2 id="resume-title">Resume</h2>
+      <p id="resume-description">Experienced Python Software Developer from Ukraine with a strong background in software development, project management, and IT support. Skilled in a range of modern technologies, with a proven track record in developing efficient tools, systems, and comprehensive IT solutions for businesses.</p>
     </div>  
 
     <div class="row">
       <div class="col-lg-6" data-aos="fade-up">
-        <h3 class="resume-title">Summary</h3>
+        <h3 class="resume-title" id="resume-summary-title">Summary</h3>
         <div class="resume-item pb-0">
-            <h4>Sam Ivanov</h4>
-            <p><em>Experienced Python Software Developer and IT Specialist based in Kirchberg, Saxony, Germany. Proficient in Python, systems engineering, and networking, with extensive experience in full-stack development, IT support, and project management. Passionate about developing innovative software solutions and optimizing business operations through technology.</em></p>
+            <h4 id="resume-summary-name">Sam Ivanov</h4>
+            <p id="resume-summary-description"><em>Experienced Python Software Developer and IT Specialist based in Kirchberg, Saxony, Germany. Proficient in Python, systems engineering, and networking, with extensive experience in full-stack development, IT support, and project management. Passionate about developing innovative software solutions and optimizing business operations through technology.</em></p>
             <ul>
                 <li>08107 Kirchberg, Germany</li>
                 <li>
@@ -296,69 +301,66 @@
             }
         </script>
 
-    
-    
-
-      <h3 class="resume-title">Education</h3>
-      <div class="resume-item">Certificate link https://certificate.ithillel.ua/view/68392618
-          <h4>C# Pro</h4>
-          <h5>February 2024 - Present</h5>
-          <p><em>Hillel IT School, Kiev, Ukraine</em></p>
-          <p>Advanced training in C# development, focusing on professional-level programming skills and project work.</p>
+      <h3 class="resume-title" id="resume-education-title">Education</h3>
+      <div class="resume-item">
+          <h4 id="resume-education-csharp-pro-title">C# Pro</h4>
+          <h5 id="resume-education-csharp-pro-dates">February 2024 - Present</h5>
+          <p><em id="resume-education-csharp-pro-institution">Hillel IT School, Kiev, Ukraine</em></p>
+          <p id="resume-education-csharp-pro-description">Advanced training in C# development, focusing on professional-level programming skills and project work.</p>
       </div>
       <div class="resume-item">
-        <h4>C# Basic</h4>
-        <h5>November 2023 - February 2024</h5>
-        <p><em>Hillel IT School, Kiev, Ukraine</em></p>
-        <p>Introductory course to C# programming, covering basic syntax, concepts, and applications.</p>
-        <p>Certificate: <a href="https://certificate.ithillel.ua/view/68392618" target="_blank">View Certificate</a></p>
+        <h4 id="resume-education-csharp-basic-title">C# Basic</h4>
+        <h5 id="resume-education-csharp-basic-dates">November 2023 - February 2024</h5>
+        <p><em id="resume-education-csharp-basic-institution">Hillel IT School, Kiev, Ukraine</em></p>
+        <p id="resume-education-csharp-basic-description">Introductory course to C# programming, covering basic syntax, concepts, and applications.</p>
+        <p id="resume-education-csharp-basic-certificate">Certificate: <a href="https://certificate.ithillel.ua/view/68392618" target="_blank">View Certificate</a></p>
       </div>
       <div class="resume-item">
-        <h4>Machine Learning</h4>
-        <h5>September 2022 - February 2023</h5>
-        <p><em>Hillel IT School, Kiev, Ukraine</em></p>
-        <p>Comprehensive training in machine learning concepts, algorithms, and practical applications.</p>
-        <p>Certificate: <a href="https://certificate.ithillel.ua/view/44883898" target="_blank">View Certificate</a></p>
+        <h4 id="resume-education-ml-title">Machine Learning</h4>
+        <h5 id="resume-education-ml-dates">September 2022 - February 2023</h5>
+        <p><em id="resume-education-ml-institution">Hillel IT School, Kiev, Ukraine</em></p>
+        <p id="resume-education-ml-description">Comprehensive training in machine learning concepts, algorithms, and practical applications.</p>
+        <p id="resume-education-ml-certificate">Certificate: <a href="https://certificate.ithillel.ua/view/44883898" target="_blank">View Certificate</a></p>
       </div>
       <div class="resume-item">
-        <h4>Python Pro, Python Development</h4>
-        <h5>May 2022 - October 2022</h5>
-        <p><em>Hillel IT School, Kiev, Ukraine</em></p>
-        <p>Advanced training in Python development covering comprehensive software development skills and project work.</p>
-        <p>Certificate: <a href="https://certificate.ithillel.ua/view/78427634" target="_blank">View Certificate</a></p>
+        <h4 id="resume-education-python-pro-title">Python Pro, Python Development</h4>
+        <h5 id="resume-education-python-pro-dates">May 2022 - October 2022</h5>
+        <p><em id="resume-education-python-pro-institution">Hillel IT School, Kiev, Ukraine</em></p>
+        <p id="resume-education-python-pro-description">Advanced training in Python development covering comprehensive software development skills and project work.</p>
+        <p id="resume-education-python-pro-certificate">Certificate: <a href="https://certificate.ithillel.ua/view/78427634" target="_blank">View Certificate</a></p>
       </div>
       <div class="resume-item">
-        <h4>Python Basic</h4>
-        <h5>January 2021 - April 2021</h5>
-        <p><em>Hillel IT School, Kiev, Ukraine</em></p>
-        <p>Introductory course to Python programming, covering fundamental concepts and basic programming skills.</p>
+        <h4 id="resume-education-python-basic-title">Python Basic</h4>
+        <h5 id="resume-education-python-basic-dates">January 2021 - April 2021</h5>
+        <p><em id="resume-education-python-basic-institution">Hillel IT School, Kiev, Ukraine</em></p>
+        <p id="resume-education-python-basic-description">Introductory course to Python programming, covering fundamental concepts and basic programming skills.</p>
       </div>
       <div class="resume-item">
-        <h4>Specialist in Engineering Technology, Quality Standardization and Certification</h4>
-        <h5>September 2009 - June 2010</h5>
-        <p><em>Donetsk National Technical University, Donetsk, Ukraine</em></p>
-        <p>Specialized training in engineering technology with a focus on quality standardization and certification.</p>
+        <h4 id="resume-education-specialist-title">Specialist in Engineering Technology, Quality Standardization and Certification</h4>
+        <h5 id="resume-education-specialist-dates">September 2009 - June 2010</h5>
+        <p><em id="resume-education-specialist-institution">Donetsk National Technical University, Donetsk, Ukraine</em></p>
+        <p id="resume-education-specialist-description">Specialized training in engineering technology with a focus on quality standardization and certification.</p>
       </div>
       <div class="resume-item">
-        <h4>Bachelor of Mechanical Engineering Technology</h4>
-        <h5>September 2004 - June 2009</h5>
-        <p><em>Donetsk National Technical University, Donetsk, Ukraine</em></p>
-        <p>Completed a bachelor's degree in Mechanical Engineering Technology, focusing on engineering principles, mechanics, and applied technology.</p>
+        <h4 id="resume-education-bachelor-title">Bachelor of Mechanical Engineering Technology</h4>
+        <h5 id="resume-education-bachelor-dates">September 2004 - June 2009</h5>
+        <p><em id="resume-education-bachelor-institution">Donetsk National Technical University, Donetsk, Ukraine</em></p>
+        <p id="resume-education-bachelor-description">Completed a bachelor's degree in Mechanical Engineering Technology, focusing on engineering principles, mechanics, and applied technology.</p>
       </div>
       <div class="resume-item">
-        <h4>Secondary Education Diploma</h4>
-        <h5>Graduated in 2004</h5>
-        <p><em>Secondary School #69, Donetsk, Ukraine</em></p>
-        <p>Received a diploma of secondary education upon graduation.</p>
+        <h4 id="resume-education-secondary-title">Secondary Education Diploma</h4>
+        <h5 id="resume-education-secondary-dates">Graduated in 2004</h5>
+        <p><em id="resume-education-secondary-institution">Secondary School #69, Donetsk, Ukraine</em></p>
+        <p id="resume-education-secondary-description">Received a diploma of secondary education upon graduation.</p>
       </div>
       </div>
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="resume-title">Professional Experience</h3>
+        <h3 class="resume-title" id="resume-experience-title">Professional Experience</h3>
         <div class="resume-item">
-          <h4>Python Developer, Network Administrator, Mobile Device Administrator</h4>
-          <h5>March 2023 - May 2024</h5>
-          <p><em>Juno Solar Home, Germany</em></p>
-          <ul>
+          <h4 id="resume-experience-juno-title">Python Developer, Network Administrator, Mobile Device Administrator</h4>
+          <h5 id="resume-experience-juno-dates">March 2023 - May 2024</h5>
+          <p><em id="resume-experience-juno-company">Juno Solar Home, Germany</em></p>
+          <ul id="resume-experience-juno-duties">
               <li>Developed and maintained AngebotsTool 2.0, a Django and DRF-based application for creating sales proposals in PDF format for solar installations.</li>
               <li>Performed all necessary calculations for solar installations, graphically displaying costs and profits of installing solar panels.</li>
               <li>Integrated AngebotsTool 2.0 with ZOHO's CRM system via API for data exchange.</li>
@@ -372,49 +374,49 @@
       </div>
       
       <div class="resume-item">
-        <h4>Python Backend Developer</h4>
-        <h5>2020 - February 2022</h5>
-        <p><em>Ukrsoft</em></p>
-        <ul>
+        <h4 id="resume-experience-ukrsoft-title">Python Backend Developer</h4>
+        <h5 id="resume-experience-ukrsoft-dates">2020 - February 2022</h5>
+        <p><em id="resume-experience-ukrsoft-company">Ukrsoft</em></p>
+        <ul id="resume-experience-ukrsoft-duties">
           <li>Developed back-end components to improve responsiveness and overall performance of applications.</li>
           <li>Integrated user-facing elements using server-side logic with Python.</li>
           <li>Implemented security and data protection solutions.</li>
         </ul>
       </div>
       <div class="resume-item">
-        <h4>Senior Research Engineer</h4>
-        <h5>2017 - 2018</h5>
-        <p><em>Odessa Regional Center For Standardization, Metrology And Certification</em></p>
-        <ul>
+        <h4 id="resume-experience-odessa-title">Senior Research Engineer</h4>
+        <h5 id="resume-experience-odessa-dates">2017 - 2018</h5>
+        <p><em id="resume-experience-odessa-company">Odessa Regional Center For Standardization, Metrology And Certification</em></p>
+        <ul id="resume-experience-odessa-duties">
           <li>Conducted advanced research and development in standardization and metrology.</li>
           <li>Developed innovative solutions for the industry, improving measurement techniques and standards.</li>
         </ul>
       </div>
       <div class="resume-item">
-        <h4>Freelance Developer</h4>
-        <h5>Ongoing</h5>
-        <p><em>Self-employed</em></p>
-        <ul>
+        <h4 id="resume-experience-freelance-title">Freelance Developer</h4>
+        <h5 id="resume-experience-freelance-dates">Ongoing</h5>
+        <p><em id="resume-experience-freelance-company">Self-employed</em></p>
+        <ul id="resume-experience-freelance-duties">
             <li>Consistently engaged in freelance work, developing a variety of projects, software with complex logic, websites, and web applications.</li>
             <li>Authored numerous projects demonstrating expertise in full-stack development, project management, and client communication.</li>
             <li>Worked with diverse technologies and frameworks to meet client needs and project requirements.</li>
         </ul>
       </div>
       <div class="resume-item">
-        <h4>Author, Developer, and Owner</h4>
-        <h5>2017 - 2020</h5>
-        <p><em>AUTOMOBILE ADMINISTRATION TOOL</em></p>
-        <ul>
+        <h4 id="resume-experience-automobile-title">Author, Developer, and Owner</h4>
+        <h5 id="resume-experience-automobile-dates">2017 - 2020</h5>
+        <p><em id="resume-experience-automobile-company">AUTOMOBILE ADMINISTRATION TOOL</em></p>
+        <ul id="resume-experience-automobile-duties">
             <li>Developed and owned the project "AUTOMOBILE ADMINISTRATION TOOL," which uses a unique program code for parsing data from other resources to simplify searching for vehicles and auto-parts over the Internet.</li>
             <li>Achieved significant technical results including saving working time, financial savings, optimization of tax collections, and solving problems related to searching for vehicles and auto-parts.</li>
             <li>Enabled prompt execution of tasks in real time and provided exclusive search results.</li>
         </ul>
     </div>
       <div class="resume-item">
-        <h4>Owner</h4>
-        <h5>2012 - 2017</h5>
-        <p><em>Vortex-Tires Car Service</em></p>
-        <ul>
+        <h4 id="resume-experience-vortex-title">Owner</h4>
+        <h5 id="resume-experience-vortex-dates">2012 - 2017</h5>
+        <p><em id="resume-experience-vortex-company">Vortex-Tires Car Service</em></p>
+        <ul id="resume-experience-vortex-duties">
             <li>Managed all aspects of the car service business, including renting commercial premises and purchasing equipment.</li>
             <li>Set up hardware and managed technical infrastructure for the business.</li>
             <li>Recruited, trained, and managed personnel to ensure high-quality service delivery.</li>
@@ -422,7 +424,6 @@
             <li>Operated an online shop, <a href="https://vortex-tires.com.ua" target="_blank">vortex-tires.com.ua</a>, for trading auto-parts and tires.</li>
         </ul>
     </div>
-    
       </div>
     </div>
 
@@ -431,13 +432,14 @@
 
 
 
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Projects</h2>
-          <p>Explore my diverse portfolio of innovative projects, showcasing my commitment to excellence, creativity, and technical expertise. Each project is a testament to my ability to deliver customized solutions that drive success and exceed client expectations. From sophisticated software applications to cutting-edge design implementations, discover how I bring ideas to life and transform visions into reality.</p>
+          <h2 id="projects-title">Projects</h2>
+          <p id="projects-description">Explore my diverse portfolio of innovative projects, showcasing my commitment to excellence, creativity, and technical expertise. Each project is a testament to my ability to deliver customized solutions that drive success and exceed client expectations. From sophisticated software applications to cutting-edge design implementations, discover how I bring ideas to life and transform visions into reality.</p>
         </div>
         
 
@@ -556,8 +558,8 @@ x
     <div class="container">
 
       <div class="section-title">
-        <h2>Contact</h2>
-        <p>If you're looking to get in touch with me, whether for projects, collaborations, or just to say hello, here's how you can reach me. I'm available for freelance work and eager to hear from you.</p>
+        <h2 id="contact-title">Contact</h2>
+        <p id="contact-description">If you're looking to get in touch with me, whether for projects, collaborations, or just to say hello, here's how you can reach me. I'm available for freelance work and eager to hear from you.</p>
       </div>
 
       <div class="row" data-aos="fade-in">
@@ -645,20 +647,643 @@ x
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Sam Ivanov</span></strong>
-      </div>
+      
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        
         Designed by <a href="https://www.linkedin.com/in/sam-i-ba0879232">Sam Ivanov</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+	
+	<script>
+	const translations = {
+		en: {
+			profileName: "Semen Ivanov",
+			navHome: "Home",
+			navAbout: "About",
+			navResume: "Resume",
+			navProjects: "Projects",
+			navContact: "Contact",
+			heroName: "Semen Ivanov",
+			heroDescription: "I'm",
+			heroDescription2: "Software Developer, Data Analyst, Machine Learning Engineer",
+			aboutTitle: "About",
+			aboutDescription: "<em>I am Sam Ivanov, a dedicated and skilled Backend & Web Developer based in Germany, specializing in Python and a range of web development technologies. With extensive experience in developing scalable and efficient applications, I excel at driving projects from conception to reality. My expertise includes full-stack development, systems engineering, and network administration, ensuring optimal functionality and a seamless user experience. I have a strong background in solar energy, having developed software solutions tailored to this field, such as tools for creating sales proposals and managing solar installations. I don't just love my job, I'm obsessed with it. Known for my problem-solving abilities and attention to detail, I consistently deliver high-quality solutions that meet and exceed client expectations.</em>",
+			aboutHeading: "Backend & Web Developer",
+			aboutIntro: "Leveraging a deep understanding of technology to solve complex problems, I am committed to enhancing the digital landscape with innovative solutions.",
+			birthdayLabel: "Birthday:",
+			websiteLabel: "Website:",
+			phoneLabel: "Phone:",
+			cityLabel: "City:",
+			ageLabel: "Age:",
+			degreeLabel: "Degree:",
+			emailLabel: "Email:",
+			personalitiesLabel: "16Personalities:",
+			aboutDetail: "My career spans various roles where I have fostered innovation and efficiency. My projects often lead to significant time and cost savings for clients, emphasizing the practical benefits of digital tools and software solutions. My approach to development is rooted in meticulous research, continual learning, and proactive problem-solving.",
+			skillsTitle: "Skills",
+			skillsDescription: "As a seasoned backend and web developer, my skill set spans various frameworks, tools, and technologies, allowing me to build robust, scalable solutions that drive business growth and operational efficiency.",
+			skillPython: "Python Frameworks (Django, Flask, FastAPI) 95%",
+			skillDatabase: "Database Management (PostgreSQL, MySQL, MongoDB) 90%",
+			skillCloud: "Cloud Platforms (Azure, AWS, DigitalOcean) 85%",
+			skillWeb: "Web Development (HTML, CSS, JavaScript, Bootstrap) 90%",
+			skillCsharp: "C# Development 85%",
+			skillMl: "Machine Learning (scikit-learn, TensorFlow, Keras) 80%",
+			skillSecurity: "Security (Cryptography, Bcrypt, OAuth) 85%",
+			skillApi: "API Development (REST, SOAP, GraphQL) 90%",
+			skillVersionControl: "Version Control & CI/CD (GIT, GitHub, GitLab, GitHub Actions, Jenkins) 95%",
+			skillTools: "Development Tools (Unix, Docker, VIM/TMUX, PyCharm, VSCode, Black, Gunicorn) 88%",
+			skillFirewall: "Firewall & Network Security 90%",
+			skillVirtualization: "Virtualization (VMWare, Hyper-V) 85%",
+			skillOs: "Operating Systems (Linux, Mac OS, Windows) 90%",
+			skillDataAnalysis: "Data Analysis & Visualization 80%",
+			resumeTitle: "Resume",
+			resumeDescription: "Experienced Python Software Developer from Ukraine with a strong background in software development, project management, and IT support. Skilled in a range of modern technologies, with a proven track record in developing efficient tools, systems, and comprehensive IT solutions for businesses.",
+			resumeSummaryTitle: "Summary",
+			resumeSummaryName: "Sam Ivanov",
+			resumeSummaryDescription: "Experienced Python Software Developer and IT Specialist based in Kirchberg, Saxony, Germany. Proficient in Python, systems engineering, and networking, with extensive experience in full-stack development, IT support, and project management. Passionate about developing innovative software solutions and optimizing business operations through technology.",
+			resumeEducationTitle: "Education",
+			resumeEducationCsharpProTitle: "C# Pro",
+			resumeEducationCsharpProDates: "February 2024 - Present",
+			resumeEducationCsharpProInstitution: "Hillel IT School, Kiev, Ukraine",
+			resumeEducationCsharpProDescription: "Advanced training in C# development, focusing on professional-level programming skills and project work.",
+			resumeEducationCsharpBasicTitle: "C# Basic",
+			resumeEducationCsharpBasicDates: "November 2023 - February 2024",
+			resumeEducationCsharpBasicInstitution: "Hillel IT School, Kiev, Ukraine",
+			resumeEducationCsharpBasicDescription: "Introductory course to C# programming, covering basic syntax, concepts, and applications.",
+			resumeEducationCsharpBasicCertificate: "Certificate: <a href='https://certificate.ithillel.ua/view/68392618' target='_blank'>View Certificate</a>",
+			resumeEducationMlTitle: "Machine Learning",
+			resumeEducationMlDates: "September 2022 - February 2023",
+			resumeEducationMlInstitution: "Hillel IT School, Kiev, Ukraine",
+			resumeEducationMlDescription: "Comprehensive training in machine learning concepts, algorithms, and practical applications.",
+			resumeEducationMlCertificate: "Certificate: <a href='https://certificate.ithillel.ua/view/44883898' target='_blank'>View Certificate</a>",
+			resumeEducationPythonProTitle: "Python Pro, Python Development",
+			resumeEducationPythonProDates: "May 2022 - October 2022",
+			resumeEducationPythonProInstitution: "Hillel IT School, Kiev, Ukraine",
+			resumeEducationPythonProDescription: "Advanced training in Python development covering comprehensive software development skills and project work.",
+			resumeEducationPythonProCertificate: "Certificate: <a href='https://certificate.ithillel.ua/view/78427634' target='_blank'>View Certificate</a>",
+			resumeEducationPythonBasicTitle: "Python Basic",
+			resumeEducationPythonBasicDates: "January 2021 - April 2021",
+			resumeEducationPythonBasicInstitution: "Hillel IT School, Kiev, Ukraine",
+			resumeEducationPythonBasicDescription: "Introductory course to Python programming, covering fundamental concepts and basic programming skills.",
+			resumeEducationSpecialistTitle: "Specialist in Engineering Technology, Quality Standardization and Certification",
+			resumeEducationSpecialistDates: "September 2009 - June 2010",
+			resumeEducationSpecialistInstitution: "Donetsk National Technical University, Donetsk, Ukraine",
+			resumeEducationSpecialistDescription: "Specialized training in engineering technology with a focus on quality standardization and certification.",
+			resumeEducationBachelorTitle: "Bachelor of Mechanical Engineering Technology",
+			resumeEducationBachelorDates: "September 2004 - June 2009",
+			resumeEducationBachelorInstitution: "Donetsk National Technical University, Donetsk, Ukraine",
+			resumeEducationBachelorDescription: "Completed a bachelor's degree in Mechanical Engineering Technology, focusing on engineering principles, mechanics, and applied technology.",
+			resumeEducationSecondaryTitle: "Secondary Education Diploma",
+			resumeEducationSecondaryDates: "Graduated in 2004",
+			resumeEducationSecondaryInstitution: "Secondary School #69, Donetsk, Ukraine",
+			resumeEducationSecondaryDescription: "Received a diploma of secondary education upon graduation.",
+			resumeExperienceTitle: "Professional Experience",
+			resumeExperienceJunoTitle: "Python Developer, Network Administrator, Mobile Device Administrator",
+			resumeExperienceJunoDates: "March 2023 - May 2024",
+			resumeExperienceJunoCompany: "Juno Solar Home, Germany",
+			resumeExperienceJunoDuties: [
+				"Developed and maintained AngebotsTool 2.0, a Django and DRF-based application for creating sales proposals in PDF format for solar installations.",
+				"Performed all necessary calculations for solar installations, graphically displaying costs and profits of installing solar panels.",
+				"Integrated AngebotsTool 2.0 with ZOHO's CRM system via API for data exchange.",
+				"Designed a PostgreSQL database for the project ensuring easy extensibility for new modules and functions.",
+				"Implemented the front-end using Bootstrap 5 and managed production deployment using GitHub and DigitalOcean.",
+				"Solely responsible for the entire development lifecycle including backend, frontend, devops, testing, troubleshooting, and debugging.",
+				"Managed all users in the company's internal network and configured administration interfaces for Android and Apple mobile devices.",
+				"Administered the SOPHOS firewall, issued VPN certificates, and set up VPN connections to company servers for all employees.",
+				"Acted as the primary troubleshooter and technical support for a company of approximately 200 employees."
+			],
+			resumeExperienceUkrsoftTitle: "Python Backend Developer",
+			resumeExperienceUkrsoftDates: "2020 - February 2022",
+			resumeExperienceUkrsoftCompany: "Ukrsoft",
+			resumeExperienceUkrsoftDuties: [
+				"Developed back-end components to improve responsiveness and overall performance of applications.",
+				"Integrated user-facing elements using server-side logic with Python.",
+				"Implemented security and data protection solutions."
+			],
+			resumeExperienceOdessaTitle: "Senior Research Engineer",
+			resumeExperienceOdessaDates: "2017 - 2018",
+			resumeExperienceOdessaCompany: "Odessa Regional Center For Standardization, Metrology And Certification",
+			resumeExperienceOdessaDuties: [
+				"Conducted advanced research and development in standardization and metrology.",
+				"Developed innovative solutions for the industry, improving measurement techniques and standards."
+			],
+			resumeExperienceFreelanceTitle: "Freelance Developer",
+			resumeExperienceFreelanceDates: "Ongoing",
+			resumeExperienceFreelanceCompany: "Self-employed",
+			resumeExperienceFreelanceDuties: [
+				"Consistently engaged in freelance work, developing a variety of projects, software with complex logic, websites, and web applications.",
+				"Authored numerous projects demonstrating expertise in full-stack development, project management, and client communication.",
+				"Worked with diverse technologies and frameworks to meet client needs and project requirements."
+			],
+			resumeExperienceAutomobileTitle: "Author, Developer, and Owner",
+			resumeExperienceAutomobileDates: "2017 - 2020",
+			resumeExperienceAutomobileCompany: "AUTOMOBILE ADMINISTRATION TOOL",
+			resumeExperienceAutomobileDuties: [
+				"Developed and owned the project 'AUTOMOBILE ADMINISTRATION TOOL,' which uses a unique program code for parsing data from other resources to simplify searching for vehicles and auto-parts over the Internet.",
+				"Achieved significant technical results including saving working time, financial savings, optimization of tax collections, and solving problems related to searching for vehicles and auto-parts.",
+				"Enabled prompt execution of tasks in real time and provided exclusive search results."
+			],
+			resumeExperienceVortexTitle: "Owner",
+			resumeExperienceVortexDates: "2012 - 2017",
+			resumeExperienceVortexCompany: "Vortex-Tires Car Service",
+			resumeExperienceVortexDuties: [
+				"Managed all aspects of the car service business, including renting commercial premises and purchasing equipment.",
+				"Set up hardware and managed technical infrastructure for the business.",
+				"Recruited, trained, and managed personnel to ensure high-quality service delivery.",
+				"Provided tire fitting services and managed auto-parts and tire sales.",
+				"Operated an online shop, <a href='https://vortex-tires.com.ua' target='_blank'>vortex-tires.com.ua</a>, for trading auto-parts and tires."
+			],
+			projectsTitle: "Projects",
+			projectsDescription: "Explore my diverse portfolio of innovative projects, showcasing my commitment to excellence, creativity, and technical expertise. Each project is a testament to my ability to deliver customized solutions that drive success and exceed client expectations. From sophisticated software applications to cutting-edge design implementations, discover how I bring ideas to life and transform visions into reality.",
+			contactTitle: "Contact",
+			contactDescription: "If you're looking to get in touch with me, whether for projects, collaborations, or just to say hello, here's how you can reach me. I'm available for freelance work and eager to hear from you.",
+		},
+		de: {
+			profileName: "Semen Ivanov",
+			navHome: "Startseite",
+			navAbout: "Über mich",
+			navResume: "Lebenslauf",
+			navProjects: "Projekte",
+			navContact: "Kontakt",
+			heroName: "Semen Ivanov",
+			heroDescription: "Ich bin",
+			heroDescription2: "Softwareentwickler, Datenanalyst, Maschinenlern-Ingenieur",
+			aboutTitle: "Über mich",
+			aboutDescription: "<em>Ich bin Sam Ivanov, ein engagierter und erfahrener Backend- & Web-Entwickler mit Sitz in Deutschland, spezialisiert auf Python und eine Reihe von Web-Entwicklungstechnologien. Mit umfangreicher Erfahrung in der Entwicklung skalierbarer und effizienter Anwendungen zeichne ich mich darin aus, Projekte von der Konzeption bis zur Realität zu führen. Zu meinen Fachkenntnissen gehören Full-Stack-Entwicklung, Systemtechnik und Netzwerkadministration, um optimale Funktionalität und ein nahtloses Benutzererlebnis zu gewährleisten. Ich habe einen starken Hintergrund in der Solarenergie und habe Softwarelösungen für dieses Gebiet entwickelt, wie Werkzeuge zur Erstellung von Verkaufsangeboten und zur Verwaltung von Solaranlagen. Ich liebe meinen Job nicht nur, ich bin besessen davon. Bekannt für meine Problemlösungsfähigkeiten und meine Aufmerksamkeit für Details liefere ich ständig qualitativ hochwertige Lösungen, die die Erwartungen der Kunden erfüllen und übertreffen.</em>",
+			aboutHeading: "Backend- & Web-Entwickler",
+			aboutIntro: "Mit einem tiefen Verständnis der Technologie zur Lösung komplexer Probleme setze ich mich dafür ein, die digitale Landschaft mit innovativen Lösungen zu verbessern.",
+			birthdayLabel: "Geburtstag:",
+			websiteLabel: "Webseite:",
+			phoneLabel: "Telefon:",
+			cityLabel: "Stadt:",
+			ageLabel: "Alter:",
+			degreeLabel: "Abschluss:",
+			emailLabel: "E-Mail:",
+			personalitiesLabel: "16Personalities:",
+			aboutDetail: "Meine Karriere umfasst verschiedene Rollen, in denen ich Innovation und Effizienz gefördert habe. Meine Projekte führen oft zu erheblichen Zeit- und Kosteneinsparungen für Kunden und betonen die praktischen Vorteile digitaler Werkzeuge und Softwarelösungen. Mein Ansatz zur Entwicklung basiert auf gründlicher Forschung, kontinuierlichem Lernen und proaktivem Problemlösen.",
+			skillsTitle: "Fähigkeiten",
+			skillsDescription: "Als erfahrener Backend- und Webentwickler umfasst mein Fähigkeiten verschiedene Frameworks, Tools und Technologien, mit denen ich robuste, skalierbare Lösungen entwickeln kann, die das Geschäftswachstum und die betriebliche Effizienz fördern.",
+			skillPython: "Python Frameworks (Django, Flask, FastAPI) 95%",
+			skillDatabase: "Datenbankverwaltung (PostgreSQL, MySQL, MongoDB) 90%",
+			skillCloud: "Cloud-Plattformen (Azure, AWS, DigitalOcean) 85%",
+			skillWeb: "Webentwicklung (HTML, CSS, JavaScript, Bootstrap) 90%",
+			skillCsharp: "C# Entwicklung 85%",
+			skillMl: "Maschinelles Lernen (scikit-learn, TensorFlow, Keras) 80%",
+			skillSecurity: "Sicherheit (Kryptographie, Bcrypt, OAuth) 85%",
+			skillApi: "API-Entwicklung (REST, SOAP, GraphQL) 90%",
+			skillVersionControl: "Versionskontrolle & CI/CD (GIT, GitHub, GitLab, GitHub Actions, Jenkins) 95%",
+			skillTools: "Entwicklungstools (Unix, Docker, VIM/TMUX, PyCharm, VSCode, Black, Gunicorn) 88%",
+			skillFirewall: "Firewall- & Netzwerksicherheit 90%",
+			skillVirtualization: "Virtualisierung (VMWare, Hyper-V) 85%",
+			skillOs: "Betriebssysteme (Linux, Mac OS, Windows) 90%",
+			skillDataAnalysis: "Datenanalyse & Visualisierung 80%",
+			resumeTitle: "Lebenslauf",
+			resumeDescription: "Erfahrener Python-Softwareentwickler aus der Ukraine mit einem starken Hintergrund in Softwareentwicklung, Projektmanagement und IT-Support. Erfahren im Umgang mit modernen Technologien und nachweislich erfolgreich in der Entwicklung effizienter Tools, Systeme und umfassender IT-Lösungen für Unternehmen.",
+			resumeSummaryTitle: "Zusammenfassung",
+			resumeSummaryName: "Sam Ivanov",
+			resumeSummaryDescription: "Erfahrener Python-Softwareentwickler und IT-Spezialist mit Sitz in Kirchberg, Sachsen, Deutschland. Versiert in Python, Systemtechnik und Netzwerken, mit umfangreicher Erfahrung in der Full-Stack-Entwicklung, IT-Support und Projektmanagement. Leidenschaftlich daran interessiert, innovative Softwarelösungen zu entwickeln und Geschäftsprozesse durch Technologie zu optimieren.",
+			resumeEducationTitle: "Bildung",
+			resumeEducationCsharpProTitle: "C# Pro",
+			resumeEducationCsharpProDates: "Februar 2024 - Heute",
+			resumeEducationCsharpProInstitution: "Hillel IT School, Kiew, Ukraine",
+			resumeEducationCsharpProDescription: "Fortgeschrittene Schulung in C#-Entwicklung, mit Fokus auf professionelle Programmierfähigkeiten und Projektarbeit.",
+			resumeEducationCsharpBasicTitle: "C# Basic",
+			resumeEducationCsharpBasicDates: "November 2023 - Februar 2024",
+			resumeEducationCsharpBasicInstitution: "Hillel IT School, Kiew, Ukraine",
+			resumeEducationCsharpBasicDescription: "Einführungskurs in die C#-Programmierung, der grundlegende Syntax, Konzepte und Anwendungen abdeckt.",
+			resumeEducationCsharpBasicCertificate: "Zertifikat: <a href='https://certificate.ithillel.ua/view/68392618' target='_blank'>Zertifikat anzeigen</a>",
+			resumeEducationMlTitle: "Maschinelles Lernen",
+			resumeEducationMlDates: "September 2022 - Februar 2023",
+			resumeEducationMlInstitution: "Hillel IT School, Kiew, Ukraine",
+			resumeEducationMlDescription: "Umfassende Schulung in Konzepten, Algorithmen und praktischen Anwendungen des maschinellen Lernens.",
+			resumeEducationMlCertificate: "Zertifikat: <a href='https://certificate.ithillel.ua/view/44883898' target='_blank'>Zertifikat anzeigen</a>",
+			resumeEducationPythonProTitle: "Python Pro, Python-Entwicklung",
+			resumeEducationPythonProDates: "Mai 2022 - Oktober 2022",
+			resumeEducationPythonProInstitution: "Hillel IT School, Kiew, Ukraine",
+			resumeEducationPythonProDescription: "Fortgeschrittene Schulung in Python-Entwicklung, die umfassende Softwareentwicklungsfähigkeiten und Projektarbeit abdeckt.",
+			resumeEducationPythonProCertificate: "Zertifikat: <a href='https://certificate.ithillel.ua/view/78427634' target='_blank'>Zertifikat anzeigen</a>",
+			resumeEducationPythonBasicTitle: "Python Basic",
+			resumeEducationPythonBasicDates: "Januar 2021 - April 2021",
+			resumeEducationPythonBasicInstitution: "Hillel IT School, Kiew, Ukraine",
+			resumeEducationPythonBasicDescription: "Einführungskurs in die Python-Programmierung, der grundlegende Konzepte und Programmierfähigkeiten abdeckt.",
+			resumeEducationSpecialistTitle: "Spezialist für Ingenieurtechnologie, Qualitätsstandardisierung und Zertifizierung",
+			resumeEducationSpecialistDates: "September 2009 - Juni 2010",
+			resumeEducationSpecialistInstitution: "Nationale Technische Universität Donezk, Donezk, Ukraine",
+			resumeEducationSpecialistDescription: "Spezialisierte Schulung in Ingenieurtechnologie mit Schwerpunkt auf Qualitätsstandardisierung und Zertifizierung.",
+			resumeEducationBachelorTitle: "Bachelor in Ingenieurtechnologie",
+			resumeEducationBachelorDates: "September 2004 - Juni 2009",
+			resumeEducationBachelorInstitution: "Nationale Technische Universität Donezk, Donezk, Ukraine",
+			resumeEducationBachelorDescription: "Abschluss eines Bachelorstudiums in Ingenieurtechnologie mit Schwerpunkt auf Ingenieurprinzipien, Mechanik und angewandter Technologie.",
+			resumeEducationSecondaryTitle: "Sekundarschulabschluss",
+			resumeEducationSecondaryDates: "Abschluss im Jahr 2004",
+			resumeEducationSecondaryInstitution: "Sekundarschule Nr. 69, Donezk, Ukraine",
+			resumeEducationSecondaryDescription: "Erhalt eines Abschlusszeugnisses der Sekundarschule nach dem Abschluss.",
+			resumeExperienceTitle: "Berufserfahrung",
+			resumeExperienceJunoTitle: "Python-Entwickler, Netzwerkadministrator, Mobile Device Administrator",
+			resumeExperienceJunoDates: "März 2023 - Mai 2024",
+			resumeExperienceJunoCompany: "Juno Solar Home, Deutschland",
+			resumeExperienceJunoDuties: [
+				"Entwickelte und pflegte AngebotsTool 2.0, eine auf Django und DRF basierende Anwendung zur Erstellung von Verkaufsangeboten im PDF-Format für Solaranlagen.",
+				"Führte alle notwendigen Berechnungen für Solaranlagen durch und stellte die Kosten und Gewinne der Installation von Solarmodulen grafisch dar.",
+				"Integrierte AngebotsTool 2.0 mit dem CRM-System von ZOHO über die API zum Datenaustausch.",
+				"Entwarf eine PostgreSQL-Datenbank für das Projekt, die eine einfache Erweiterbarkeit für neue Module und Funktionen sicherstellt.",
+				"Implementierte das Front-End mit Bootstrap 5 und verwaltete die Produktionsbereitstellung mit GitHub und DigitalOcean.",
+				"War allein verantwortlich für den gesamten Entwicklungszyklus, einschließlich Backend, Frontend, DevOps, Tests, Fehlersuche und Debugging.",
+				"Verwaltete alle Benutzer im internen Netzwerk des Unternehmens und konfigurierte Verwaltungsoberflächen für Android- und Apple-Mobilgeräte.",
+				"Verwaltete die SOPHOS-Firewall, stellte VPN-Zertifikate aus und richtete VPN-Verbindungen zu den Unternehmensservern für alle Mitarbeiter ein.",
+				"Fungierte als Hauptansprechpartner für technische Unterstützung und Problemlösung für ein Unternehmen mit ca. 200 Mitarbeitern."
+			],
+			resumeExperienceUkrsoftTitle: "Python Backend-Entwickler",
+			resumeExperienceUkrsoftDates: "2020 - Februar 2022",
+			resumeExperienceUkrsoftCompany: "Ukrsoft",
+			resumeExperienceUkrsoftDuties: [
+				"Entwickelte Backend-Komponenten zur Verbesserung der Reaktionsfähigkeit und Gesamtleistung von Anwendungen.",
+				"Integrierte benutzerorientierte Elemente mithilfe von serverseitiger Logik mit Python.",
+				"Implementierte Sicherheits- und Datenschutzlösungen."
+			],
+			resumeExperienceOdessaTitle: "Senior Research Engineer",
+			resumeExperienceOdessaDates: "2017 - 2018",
+			resumeExperienceOdessaCompany: "Odessa Regional Center For Standardization, Metrology And Certification",
+			resumeExperienceOdessaDuties: [
+				"Führte fortschrittliche Forschungs- und Entwicklungsarbeiten im Bereich Standardisierung und Metrologie durch.",
+				"Entwickelte innovative Lösungen für die Industrie, um Messtechniken und Standards zu verbessern."
+			],
+			resumeExperienceFreelanceTitle: "Freiberuflicher Entwickler",
+			resumeExperienceFreelanceDates: "Laufend",
+			resumeExperienceFreelanceCompany: "Selbstständig",
+			resumeExperienceFreelanceDuties: [
+				"Ständig in freiberuflicher Arbeit tätig, Entwicklung einer Vielzahl von Projekten, Software mit komplexer Logik, Websites und Webanwendungen.",
+				"Verfasste zahlreiche Projekte, die Fachwissen in der Full-Stack-Entwicklung, Projektmanagement und Kundenkommunikation demonstrieren.",
+				"Arbeitete mit verschiedenen Technologien und Frameworks, um den Bedürfnissen und Anforderungen der Kunden gerecht zu werden."
+			],
+			resumeExperienceAutomobileTitle: "Autor, Entwickler und Eigentümer",
+			resumeExperienceAutomobileDates: "2017 - 2020",
+			resumeExperienceAutomobileCompany: "AUTOMOBILE ADMINISTRATION TOOL",
+			resumeExperienceAutomobileDuties: [
+				"Entwickelte und besaß das Projekt 'AUTOMOBILE ADMINISTRATION TOOL', das einen einzigartigen Programmcode zum Parsen von Daten aus anderen Ressourcen verwendet, um die Suche nach Fahrzeugen und Autoteilen im Internet zu vereinfachen.",
+				"Erzielte bedeutende technische Ergebnisse, einschließlich Einsparung von Arbeitszeit, finanziellen Einsparungen, Optimierung der Steuererhebung und Lösung von Problemen im Zusammenhang mit der Suche nach Fahrzeugen und Autoteilen.",
+				"Ermöglichte die sofortige Ausführung von Aufgaben in Echtzeit und lieferte exklusive Suchergebnisse."
+			],
+			resumeExperienceVortexTitle: "Eigentümer",
+			resumeExperienceVortexDates: "2012 - 2017",
+			resumeExperienceVortexCompany: "Vortex-Tires Car Service",
+			resumeExperienceVortexDuties: [
+				"Verwaltete alle Aspekte des Kfz-Servicegeschäfts, einschließlich der Anmietung von Geschäftsräumen und des Kaufs von Ausrüstung.",
+				"Richtete Hardware ein und verwaltete die technische Infrastruktur für das Geschäft.",
+				"Rekrutierte, schulte und verwaltete das Personal, um eine hochwertige Servicebereitstellung sicherzustellen.",
+				"Bot Reifenmontagedienste an und verwaltete den Verkauf von Autoteilen und Reifen.",
+				"Betrieb einen Online-Shop, <a href='https://vortex-tires.com.ua' target='_blank'>vortex-tires.com.ua</a>, für den Handel mit Autoteilen und Reifen."
+			],
+			projectsTitle: "Projekte",
+			projectsDescription: "Entdecken Sie mein vielfältiges Portfolio innovativer Projekte, die mein Engagement für hervorragende Leistungen, Kreativität und technisches Fachwissen unter Beweis stellen. Jedes Projekt ist ein Beweis für meine Fähigkeit, maßgeschneiderte Lösungen zu liefern, die den Erfolg fördern und die Erwartungen der Kunden übertreffen. Entdecken Sie, wie ich Ideen zum Leben erwecke und Visionen in die Realität umsetze - von ausgefeilten Softwareanwendungen bis hin zu modernsten Design-Implementierungen.",
+			contactTitle: "Kontakt",
+			contactDescription: "Wenn Sie mit mir in Kontakt treten möchten, sei es für Projekte, Zusammenarbeit oder einfach nur, um Hallo zu sagen, können Sie mich hier erreichen. Ich stehe für freiberufliche Arbeit zur Verfügung und freue mich darauf, von Ihnen zu hören.",
+		}
+	};
+	
+	let typedInstance;
+	
+	function switchLanguage(lang) {
+		const profileName = document.getElementById('profile-name');
+		if (profileName) profileName.innerHTML = translations[lang].profileName;
+		
+		const navItems = document.querySelectorAll('nav .nav-link span');
+		if (navItems.length >= 5) {
+			navItems[0].innerHTML = translations[lang].navHome;
+			navItems[1].innerHTML = translations[lang].navAbout;
+			navItems[2].innerHTML = translations[lang].navResume;
+			navItems[3].innerHTML = translations[lang].navProjects;
+			navItems[4].innerHTML = translations[lang].navContact;
+		}
+		
+		const heroName = document.getElementById('hero-name');
+		if (heroName) heroName.innerHTML = translations[lang].heroName;
+		
+		const heroDescription = document.getElementById('hero-description');
+		if (heroDescription) heroDescription.innerHTML = translations[lang].heroDescription;
+		
+		const heroDescription2 = document.getElementById('hero-description-2');
+		if (heroDescription2) {
+			heroDescription2.setAttribute('data-typed-items', translations[lang].heroDescription2);
+	
+			if (typedInstance) {
+				typedInstance.destroy();
+			}
+	
+			typedInstance = new Typed('#hero-description-2', {
+				strings: translations[lang].heroDescription2.split(', '),
+				typeSpeed: 50,
+				backSpeed: 50,
+				backDelay: 2000,
+				loop: true
+			});
+		}
+		
+		const aboutTitle = document.getElementById('about-title');
+		if (aboutTitle) aboutTitle.innerHTML = translations[lang].aboutTitle;
+		
+		const aboutDescription = document.getElementById('about-description');
+		if (aboutDescription) aboutDescription.innerHTML = translations[lang].aboutDescription;
+		
+		const aboutHeading = document.getElementById('about-heading');
+		if (aboutHeading) aboutHeading.innerHTML = translations[lang].aboutHeading;
+		
+		const aboutIntro = document.getElementById('about-intro');
+		if (aboutIntro) aboutIntro.innerHTML = translations[lang].aboutIntro;
+		
+		const birthdayLabel = document.getElementById('birthday-label');
+		if (birthdayLabel) birthdayLabel.innerHTML = translations[lang].birthdayLabel;
+		
+		const websiteLabel = document.getElementById('website-label');
+		if (websiteLabel) websiteLabel.innerHTML = translations[lang].websiteLabel;
+		
+		const phoneLabel = document.getElementById('phone-label');
+		if (phoneLabel) phoneLabel.innerHTML = translations[lang].phoneLabel;
+		
+		const cityLabel = document.getElementById('city-label');
+		if (cityLabel) cityLabel.innerHTML = translations[lang].cityLabel;
+		
+		const ageLabel = document.getElementById('age-label');
+		if (ageLabel) ageLabel.innerHTML = translations[lang].ageLabel;
+		
+		const degreeLabel = document.getElementById('degree-label');
+		if (degreeLabel) degreeLabel.innerHTML = translations[lang].degreeLabel;
+		
+		const emailLabel = document.getElementById('email-label');
+		if (emailLabel) emailLabel.innerHTML = translations[lang].emailLabel;
+		
+		const personalitiesLabel = document.getElementById('16personalities-label');
+		if (personalitiesLabel) personalitiesLabel.innerHTML = translations[lang].personalitiesLabel;
+		
+		const aboutDetail = document.getElementById('about-detail');
+		if (aboutDetail) aboutDetail.innerHTML = translations[lang].aboutDetail;
+		
+		const skillsTitle = document.getElementById('skills-title');
+		if (skillsTitle) skillsTitle.innerHTML = translations[lang].skillsTitle;
+		
+		const skillsDescription = document.getElementById('skills-description');
+		if (skillsDescription) skillsDescription.innerHTML = translations[lang].skillsDescription;
+		
+		const skillPython = document.getElementById('skill-python');
+		if (skillPython) skillPython.innerHTML = translations[lang].skillPython;
+		
+		const skillDatabase = document.getElementById('skill-database');
+		if (skillDatabase) skillDatabase.innerHTML = translations[lang].skillDatabase;
+		
+		const skillCloud = document.getElementById('skill-cloud');
+		if (skillCloud) skillCloud.innerHTML = translations[lang].skillCloud;
+		
+		const skillWeb = document.getElementById('skill-web');
+		if (skillWeb) skillWeb.innerHTML = translations[lang].skillWeb;
+		
+		const skillCsharp = document.getElementById('skill-csharp');
+		if (skillCsharp) skillCsharp.innerHTML = translations[lang].skillCsharp;
+		
+		const skillMl = document.getElementById('skill-ml');
+		if (skillMl) skillMl.innerHTML = translations[lang].skillMl;
+		
+		const skillSecurity = document.getElementById('skill-security');
+		if (skillSecurity) skillSecurity.innerHTML = translations[lang].skillSecurity;
+		
+		const skillApi = document.getElementById('skill-api');
+		if (skillApi) skillApi.innerHTML = translations[lang].skillApi;
+		
+		const skillVersionControl = document.getElementById('skill-version-control');
+		if (skillVersionControl) skillVersionControl.innerHTML = translations[lang].skillVersionControl;
+		
+		const skillTools = document.getElementById('skill-tools');
+		if (skillTools) skillTools.innerHTML = translations[lang].skillTools;
+		
+		const skillFirewall = document.getElementById('skill-firewall');
+		if (skillFirewall) skillFirewall.innerHTML = translations[lang].skillFirewall;
+		
+		const skillVirtualization = document.getElementById('skill-virtualization');
+		if (skillVirtualization) skillVirtualization.innerHTML = translations[lang].skillVirtualization;
+		
+		const skillOs = document.getElementById('skill-os');
+		if (skillOs) skillOs.innerHTML = translations[lang].skillOs;
+		
+		const skillDataAnalysis = document.getElementById('skill-data-analysis');
+		if (skillDataAnalysis) skillDataAnalysis.innerHTML = translations[lang].skillDataAnalysis;
+	
+		const resumeTitle = document.getElementById('resume-title');
+		if (resumeTitle) resumeTitle.innerHTML = translations[lang].resumeTitle;
+		
+		const resumeDescription = document.getElementById('resume-description');
+		if (resumeDescription) resumeDescription.innerHTML = translations[lang].resumeDescription;
+		
+		const resumeSummaryTitle = document.getElementById('resume-summary-title');
+		if (resumeSummaryTitle) resumeSummaryTitle.innerHTML = translations[lang].resumeSummaryTitle;
+		
+		const resumeSummaryName = document.getElementById('resume-summary-name');
+		if (resumeSummaryName) resumeSummaryName.innerHTML = translations[lang].resumeSummaryName;
+		
+		const resumeSummaryDescription = document.getElementById('resume-summary-description');
+		if (resumeSummaryDescription) resumeSummaryDescription.innerHTML = translations[lang].resumeSummaryDescription;
+		
+		const resumeEducationTitle = document.getElementById('resume-education-title');
+		if (resumeEducationTitle) resumeEducationTitle.innerHTML = translations[lang].resumeEducationTitle;
+		
+		const resumeEducationCsharpProTitle = document.getElementById('resume-education-csharp-pro-title');
+		if (resumeEducationCsharpProTitle) resumeEducationCsharpProTitle.innerHTML = translations[lang].resumeEducationCsharpProTitle;
+		
+		const resumeEducationCsharpProDates = document.getElementById('resume-education-csharp-pro-dates');
+		if (resumeEducationCsharpProDates) resumeEducationCsharpProDates.innerHTML = translations[lang].resumeEducationCsharpProDates;
+		
+		const resumeEducationCsharpProInstitution = document.getElementById('resume-education-csharp-pro-institution');
+		if (resumeEducationCsharpProInstitution) resumeEducationCsharpProInstitution.innerHTML = translations[lang].resumeEducationCsharpProInstitution;
+		
+		const resumeEducationCsharpProDescription = document.getElementById('resume-education-csharp-pro-description');
+		if (resumeEducationCsharpProDescription) resumeEducationCsharpProDescription.innerHTML = translations[lang].resumeEducationCsharpProDescription;
+		
+		const resumeEducationCsharpBasicTitle = document.getElementById('resume-education-csharp-basic-title');
+		if (resumeEducationCsharpBasicTitle) resumeEducationCsharpBasicTitle.innerHTML = translations[lang].resumeEducationCsharpBasicTitle;
+		
+		const resumeEducationCsharpBasicDates = document.getElementById('resume-education-csharp-basic-dates');
+		if (resumeEducationCsharpBasicDates) resumeEducationCsharpBasicDates.innerHTML = translations[lang].resumeEducationCsharpBasicDates;
+		
+		const resumeEducationCsharpBasicInstitution = document.getElementById('resume-education-csharp-basic-institution');
+		if (resumeEducationCsharpBasicInstitution) resumeEducationCsharpBasicInstitution.innerHTML = translations[lang].resumeEducationCsharpBasicInstitution;
+		
+		const resumeEducationCsharpBasicDescription = document.getElementById('resume-education-csharp-basic-description');
+		if (resumeEducationCsharpBasicDescription) resumeEducationCsharpBasicDescription.innerHTML = translations[lang].resumeEducationCsharpBasicDescription;
+		
+		const resumeEducationCsharpBasicCertificate = document.getElementById('resume-education-csharp-basic-certificate');
+		if (resumeEducationCsharpBasicCertificate) resumeEducationCsharpBasicCertificate.innerHTML = translations[lang].resumeEducationCsharpBasicCertificate;
+		
+		const resumeEducationMlTitle = document.getElementById('resume-education-ml-title');
+		if (resumeEducationMlTitle) resumeEducationMlTitle.innerHTML = translations[lang].resumeEducationMlTitle;
+		
+		const resumeEducationMlDates = document.getElementById('resume-education-ml-dates');
+		if (resumeEducationMlDates) resumeEducationMlDates.innerHTML = translations[lang].resumeEducationMlDates;
+		
+		const resumeEducationMlInstitution = document.getElementById('resume-education-ml-institution');
+		if (resumeEducationMlInstitution) resumeEducationMlInstitution.innerHTML = translations[lang].resumeEducationMlInstitution;
+		
+		const resumeEducationMlDescription = document.getElementById('resume-education-ml-description');
+		if (resumeEducationMlDescription) resumeEducationMlDescription.innerHTML = translations[lang].resumeEducationMlDescription;
+		
+		const resumeEducationMlCertificate = document.getElementById('resume-education-ml-certificate');
+		if (resumeEducationMlCertificate) resumeEducationMlCertificate.innerHTML = translations[lang].resumeEducationMlCertificate;
+		
+		const resumeEducationPythonProTitle = document.getElementById('resume-education-python-pro-title');
+		if (resumeEducationPythonProTitle) resumeEducationPythonProTitle.innerHTML = translations[lang].resumeEducationPythonProTitle;
+		
+		const resumeEducationPythonProDates = document.getElementById('resume-education-python-pro-dates');
+		if (resumeEducationPythonProDates) resumeEducationPythonProDates.innerHTML = translations[lang].resumeEducationPythonProDates;
+		
+		const resumeEducationPythonProInstitution = document.getElementById('resume-education-python-pro-institution');
+		if (resumeEducationPythonProInstitution) resumeEducationPythonProInstitution.innerHTML = translations[lang].resumeEducationPythonProInstitution;
+		
+		const resumeEducationPythonProDescription = document.getElementById('resume-education-python-pro-description');
+		if (resumeEducationPythonProDescription) resumeEducationPythonProDescription.innerHTML = translations[lang].resumeEducationPythonProDescription;
+		
+		const resumeEducationPythonProCertificate = document.getElementById('resume-education-python-pro-certificate');
+		if (resumeEducationPythonProCertificate) resumeEducationPythonProCertificate.innerHTML = translations[lang].resumeEducationPythonProCertificate;
+		
+		const resumeEducationPythonBasicTitle = document.getElementById('resume-education-python-basic-title');
+		if (resumeEducationPythonBasicTitle) resumeEducationPythonBasicTitle.innerHTML = translations[lang].resumeEducationPythonBasicTitle;
+		
+		const resumeEducationPythonBasicDates = document.getElementById('resume-education-python-basic-dates');
+		if (resumeEducationPythonBasicDates) resumeEducationPythonBasicDates.innerHTML = translations[lang].resumeEducationPythonBasicDates;
+		
+		const resumeEducationPythonBasicInstitution = document.getElementById('resume-education-python-basic-institution');
+		if (resumeEducationPythonBasicInstitution) resumeEducationPythonBasicInstitution.innerHTML = translations[lang].resumeEducationPythonBasicInstitution;
+		
+		const resumeEducationPythonBasicDescription = document.getElementById('resume-education-python-basic-description');
+		if (resumeEducationPythonBasicDescription) resumeEducationPythonBasicDescription.innerHTML = translations[lang].resumeEducationPythonBasicDescription;
+		
+		const resumeEducationSpecialistTitle = document.getElementById('resume-education-specialist-title');
+		if (resumeEducationSpecialistTitle) resumeEducationSpecialistTitle.innerHTML = translations[lang].resumeEducationSpecialistTitle;
+		
+		const resumeEducationSpecialistDates = document.getElementById('resume-education-specialist-dates');
+		if (resumeEducationSpecialistDates) resumeEducationSpecialistDates.innerHTML = translations[lang].resumeEducationSpecialistDates;
+		
+		const resumeEducationSpecialistInstitution = document.getElementById('resume-education-specialist-institution');
+		if (resumeEducationSpecialistInstitution) resumeEducationSpecialistInstitution.innerHTML = translations[lang].resumeEducationSpecialistInstitution;
+		
+		const resumeEducationSpecialistDescription = document.getElementById('resume-education-specialist-description');
+		if (resumeEducationSpecialistDescription) resumeEducationSpecialistDescription.innerHTML = translations[lang].resumeEducationSpecialistDescription;
+		
+		const resumeEducationBachelorTitle = document.getElementById('resume-education-bachelor-title');
+		if (resumeEducationBachelorTitle) resumeEducationBachelorTitle.innerHTML = translations[lang].resumeEducationBachelorTitle;
+		
+		const resumeEducationBachelorDates = document.getElementById('resume-education-bachelor-dates');
+		if (resumeEducationBachelorDates) resumeEducationBachelorDates.innerHTML = translations[lang].resumeEducationBachelorDates;
+		
+		const resumeEducationBachelorInstitution = document.getElementById('resume-education-bachelor-institution');
+		if (resumeEducationBachelorInstitution) resumeEducationBachelorInstitution.innerHTML = translations[lang].resumeEducationBachelorInstitution;
+		
+		const resumeEducationBachelorDescription = document.getElementById('resume-education-bachelor-description');
+		if (resumeEducationBachelorDescription) resumeEducationBachelorDescription.innerHTML = translations[lang].resumeEducationBachelorDescription;
+		
+		const resumeEducationSecondaryTitle = document.getElementById('resume-education-secondary-title');
+		if (resumeEducationSecondaryTitle) resumeEducationSecondaryTitle.innerHTML = translations[lang].resumeEducationSecondaryTitle;
+		
+		const resumeEducationSecondaryDates = document.getElementById('resume-education-secondary-dates');
+		if (resumeEducationSecondaryDates) resumeEducationSecondaryDates.innerHTML = translations[lang].resumeEducationSecondaryDates;
+		
+		const resumeEducationSecondaryInstitution = document.getElementById('resume-education-secondary-institution');
+		if (resumeEducationSecondaryInstitution) resumeEducationSecondaryInstitution.innerHTML = translations[lang].resumeEducationSecondaryInstitution;
+		
+		const resumeEducationSecondaryDescription = document.getElementById('resume-education-secondary-description');
+		if (resumeEducationSecondaryDescription) resumeEducationSecondaryDescription.innerHTML = translations[lang].resumeEducationSecondaryDescription;
+		
+		const resumeExperienceTitle = document.getElementById('resume-experience-title');
+		if (resumeExperienceTitle) resumeExperienceTitle.innerHTML = translations[lang].resumeExperienceTitle;
+		
+		const resumeExperienceJunoTitle = document.getElementById('resume-experience-juno-title');
+		if (resumeExperienceJunoTitle) resumeExperienceJunoTitle.innerHTML = translations[lang].resumeExperienceJunoTitle;
+		
+		const resumeExperienceJunoDates = document.getElementById('resume-experience-juno-dates');
+		if (resumeExperienceJunoDates) resumeExperienceJunoDates.innerHTML = translations[lang].resumeExperienceJunoDates;
+		
+		const resumeExperienceJunoCompany = document.getElementById('resume-experience-juno-company');
+		if (resumeExperienceJunoCompany) resumeExperienceJunoCompany.innerHTML = translations[lang].resumeExperienceJunoCompany;
+		
+		const resumeExperienceJunoDuties = document.getElementById('resume-experience-juno-duties');
+		if (resumeExperienceJunoDuties) resumeExperienceJunoDuties.innerHTML = translations[lang].resumeExperienceJunoDuties.map(duty => `<li>${duty}</li>`).join('');
+		
+		const resumeExperienceUkrsoftTitle = document.getElementById('resume-experience-ukrsoft-title');
+		if (resumeExperienceUkrsoftTitle) resumeExperienceUkrsoftTitle.innerHTML = translations[lang].resumeExperienceUkrsoftTitle;
+		
+		const resumeExperienceUkrsoftDates = document.getElementById('resume-experience-ukrsoft-dates');
+		if (resumeExperienceUkrsoftDates) resumeExperienceUkrsoftDates.innerHTML = translations[lang].resumeExperienceUkrsoftDates;
+		
+		const resumeExperienceUkrsoftCompany = document.getElementById('resume-experience-ukrsoft-company');
+		if (resumeExperienceUkrsoftCompany) resumeExperienceUkrsoftCompany.innerHTML = translations[lang].resumeExperienceUkrsoftCompany;
+		
+		const resumeExperienceUkrsoftDuties = document.getElementById('resume-experience-ukrsoft-duties');
+		if (resumeExperienceUkrsoftDuties) resumeExperienceUkrsoftDuties.innerHTML = translations[lang].resumeExperienceUkrsoftDuties.map(duty => `<li>${duty}</li>`).join('');
+		
+		const resumeExperienceOdessaTitle = document.getElementById('resume-experience-odessa-title');
+		if (resumeExperienceOdessaTitle) resumeExperienceOdessaTitle.innerHTML = translations[lang].resumeExperienceOdessaTitle;
+		
+		const resumeExperienceOdessaDates = document.getElementById('resume-experience-odessa-dates');
+		if (resumeExperienceOdessaDates) resumeExperienceOdessaDates.innerHTML = translations[lang].resumeExperienceOdessaDates;
+		
+		const resumeExperienceOdessaCompany = document.getElementById('resume-experience-odessa-company');
+		if (resumeExperienceOdessaCompany) resumeExperienceOdessaCompany.innerHTML = translations[lang].resumeExperienceOdessaCompany;
+		
+		const resumeExperienceOdessaDuties = document.getElementById('resume-experience-odessa-duties');
+		if (resumeExperienceOdessaDuties) resumeExperienceOdessaDuties.innerHTML = translations[lang].resumeExperienceOdessaDuties.map(duty => `<li>${duty}</li>`).join('');
+		
+		const resumeExperienceFreelanceTitle = document.getElementById('resume-experience-freelance-title');
+		if (resumeExperienceFreelanceTitle) resumeExperienceFreelanceTitle.innerHTML = translations[lang].resumeExperienceFreelanceTitle;
+		
+		const resumeExperienceFreelanceDates = document.getElementById('resume-experience-freelance-dates');
+		if (resumeExperienceFreelanceDates) resumeExperienceFreelanceDates.innerHTML = translations[lang].resumeExperienceFreelanceDates;
+		
+		const resumeExperienceFreelanceCompany = document.getElementById('resume-experience-freelance-company');
+		if (resumeExperienceFreelanceCompany) resumeExperienceFreelanceCompany.innerHTML = translations[lang].resumeExperienceFreelanceCompany;
+		
+		const resumeExperienceFreelanceDuties = document.getElementById('resume-experience-freelance-duties');
+		if (resumeExperienceFreelanceDuties) resumeExperienceFreelanceDuties.innerHTML = translations[lang].resumeExperienceFreelanceDuties.map(duty => `<li>${duty}</li>`).join('');
+		
+		const resumeExperienceAutomobileTitle = document.getElementById('resume-experience-automobile-title');
+		if (resumeExperienceAutomobileTitle) resumeExperienceAutomobileTitle.innerHTML = translations[lang].resumeExperienceAutomobileTitle;
+		
+		const resumeExperienceAutomobileDates = document.getElementById('resume-experience-automobile-dates');
+		if (resumeExperienceAutomobileDates) resumeExperienceAutomobileDates.innerHTML = translations[lang].resumeExperienceAutomobileDates;
+		
+		const resumeExperienceAutomobileCompany = document.getElementById('resume-experience-automobile-company');
+		if (resumeExperienceAutomobileCompany) resumeExperienceAutomobileCompany.innerHTML = translations[lang].resumeExperienceAutomobileCompany;
+		
+		const resumeExperienceAutomobileDuties = document.getElementById('resume-experience-automobile-duties');
+		if (resumeExperienceAutomobileDuties) resumeExperienceAutomobileDuties.innerHTML = translations[lang].resumeExperienceAutomobileDuties.map(duty => `<li>${duty}</li>`).join('');
+		
+		const resumeExperienceVortexTitle = document.getElementById('resume-experience-vortex-title');
+		if (resumeExperienceVortexTitle) resumeExperienceVortexTitle.innerHTML = translations[lang].resumeExperienceVortexTitle;
+		
+		const resumeExperienceVortexDates = document.getElementById('resume-experience-vortex-dates');
+		if (resumeExperienceVortexDates) resumeExperienceVortexDates.innerHTML = translations[lang].resumeExperienceVortexDates;
+		
+		const resumeExperienceVortexCompany = document.getElementById('resume-experience-vortex-company');
+		if (resumeExperienceVortexCompany) resumeExperienceVortexCompany.innerHTML = translations[lang].resumeExperienceVortexCompany;
+		
+		const resumeExperienceVortexDuties = document.getElementById('resume-experience-vortex-duties');
+		if (resumeExperienceVortexDuties) resumeExperienceVortexDuties.innerHTML = translations[lang].resumeExperienceVortexDuties.map(duty => `<li>${duty}</li>`).join('');
+
+		const projectsTitle = document.getElementById('projects-title');
+		if (projectsTitle) projectsTitle.innerHTML = translations[lang].projectsTitle;
+
+		const projectsDescription = document.getElementById('projects-description');
+		if (projectsDescription) projectsDescription.innerHTML = translations[lang].projectsDescription;
+
+		const contactTitle = document.getElementById('contact-title');
+		if (contactTitle) contactTitle.innerHTML = translations[lang].contactTitle;
+
+		const contactDescription = document.getElementById('contact-description');
+		if (contactDescription) contactDescription.innerHTML = translations[lang].contactDescription;
+	}
+	</script>
+	
+
+	
+
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -667,7 +1292,7 @@ x
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <!-- <script src="assets/vendor/typed.js/typed.umd.js"></script> -->
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
