@@ -76,7 +76,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1 id="hero-name">Semen Ivanov</h1>
-      <p><span class="typed" data-typed-items="Software Developer, Data Analyst, Machine Learning Engineer"></span></p>
+      <p><span class="typed" data-typed-items="Software Developer, Data Analyst, ML Engineer"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -304,9 +304,10 @@
       <h3 class="resume-title" id="resume-education-title">Education</h3>
       <div class="resume-item">
           <h4 id="resume-education-csharp-pro-title">C# Pro</h4>
-          <h5 id="resume-education-csharp-pro-dates">February 2024 - Present</h5>
+          <h5 id="resume-education-csharp-pro-dates">February 2024 - June 2024</h5>
           <p><em id="resume-education-csharp-pro-institution">Hillel IT School, Kiev, Ukraine</em></p>
           <p id="resume-education-csharp-pro-description">Advanced training in C# development, focusing on professional-level programming skills and project work.</p>
+          <p id="resume-education-csharp-basic-certificate">Certificate: <a href="https://certificate.ithillel.ua/view/28399513" target="_blank">View Certificate</a></p>
       </div>
       <div class="resume-item">
         <h4 id="resume-education-csharp-basic-title">C# Basic</h4>
@@ -357,21 +358,40 @@
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
         <h3 class="resume-title" id="resume-experience-title">Professional Experience</h3>
         <div class="resume-item">
+          <h4 id="resume-experience-qitec-title">Machine Learning Engineer, Software Developer</h4>
+          <h5 id="resume-experience-qitec-dates">June 2022 - Present</h5>
+          <p><em id="resume-experience-qitec-company">QiTEC, Germany</em></p>
+          <ul id="resume-experience-qitec-duties">
+            <li><strong>Project Objectives:</strong> Develop QiKI, an AI system for advanced knowledge management and automation to improve data handling efficiency.</li>
+            <li><strong>Natural Language Understanding (NLU):</strong> Implement NLP models to comprehend and interpret user requests in natural language.</li>
+            <li><strong>Database Connectivity:</strong> Establish secure connections with QBC database, PDF knowledge database, and TANSS ticket system using APIs for information retrieval and updates.</li>
+            <li><strong>Task Automation:</strong> Automate routine tasks such as form filling, text generation, and issue resolution with predefined templates and triggered workflows.</li>
+            <li><strong>Solution Suggestions:</strong> Provide potential solutions for problems based on the knowledge database and previous ticket resolutions, displayed in a popup window for new tickets.</li>
+            <li><strong>Context Awareness:</strong> Maintain conversational context to handle follow-up questions seamlessly, delivering accurate and relevant responses.</li>
+            <li><strong>User Authentication and Authorization:</strong> Implement secure methods to ensure only authorized personnel can access specific functions and data.</li>
+            <li><strong>Technical Stack:</strong> Utilize FastAPI for the backend, SQLAlchemy and CNOS for database interaction, and React.js for developing dynamic popup solutions. Ensure secure authentication using OAuth2.0 and JWT.</li>
+            <li><strong>Development Lifecycle Management:</strong> Oversee the entire development process from requirement analysis, planning, development, integration, testing, to deployment using Docker.</li>
+          </ul>
+        </div>
+        
+        <div class="resume-item">
           <h4 id="resume-experience-juno-title">Python Developer, Network Administrator, Mobile Device Administrator</h4>
           <h5 id="resume-experience-juno-dates">March 2023 - May 2024</h5>
           <p><em id="resume-experience-juno-company">Juno Solar Home, Germany</em></p>
           <ul id="resume-experience-juno-duties">
-              <li>Developed and maintained AngebotsTool 2.0, a Django and DRF-based application for creating sales proposals in PDF format for solar installations.</li>
-              <li>Performed all necessary calculations for solar installations, graphically displaying costs and profits of installing solar panels.</li>
-              <li>Integrated AngebotsTool 2.0 with ZOHO's CRM system via API for data exchange.</li>
-              <li>Designed a PostgreSQL database for the project ensuring easy extensibility for new modules and functions.</li>
-              <li>Implemented the front-end using Bootstrap 5 and managed production deployment using GitHub and DigitalOcean.</li>
-              <li>Solely responsible for the entire development lifecycle including backend, frontend, devops, testing, troubleshooting, and debugging.</li>
-              <li>Managed all users in the company's internal network and configured administration interfaces for Android and Apple mobile devices.</li>
-              <li>Administered the SOPHOS firewall, issued VPN certificates, and set up VPN connections to company servers for all employees.</li>
-              <li>Acted as the primary troubleshooter and technical support for a company of approximately 200 employees.</li>
+            <li>Developed and maintained AngebotsTool 2.0, a Django and DRF-based application for creating sales proposals in PDF format for solar installations.</li>
+            <li>Performed all necessary calculations for solar installations, graphically displaying costs and profits of installing solar panels.</li>
+            <li>Integrated AngebotsTool 2.0 with ZOHO's CRM system via API for data exchange.</li>
+            <li>Designed a PostgreSQL database for the project ensuring easy extensibility for new modules and functions.</li>
+            <li>Implemented the front-end using Bootstrap 5 and managed production deployment using GitHub and DigitalOcean.</li>
+            <li>Solely responsible for the entire development lifecycle including backend, frontend, devops, testing, troubleshooting, and debugging.</li>
+            <li>Managed all users in the company's internal network and configured administration interfaces for Android and Apple mobile devices.</li>
+            <li>Administered the SOPHOS firewall, issued VPN certificates, and set up VPN connections to company servers for all employees.</li>
+            <li>Acted as the primary troubleshooter and technical support for a company of approximately 200 employees.</li>
           </ul>
-      </div>
+          <p><a href="assets/Arbeitszeugnis_Juno.pdf" target="_blank">Arbeitszeugnis (Reference Letter from Juno Solar GmbH)</a></p>
+        </div>
+        
       
       <div class="resume-item">
         <h4 id="resume-experience-ukrsoft-title">Python Backend Developer</h4>
@@ -449,7 +469,7 @@
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">WFPA</li>
               <li data-filter=".filter-web">AngebotsTool 2.0</li>
-              <li data-filter=".filter-card">ATAT</li>
+              <li data-filter=".filter-card">QiKI</li>
               
             </ul>
           </div>
@@ -517,6 +537,7 @@
             </div>
           </div>
 
+          
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
